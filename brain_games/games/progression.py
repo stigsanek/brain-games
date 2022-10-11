@@ -1,12 +1,7 @@
 import random
 
 from brain_games.games.base import get_random_num
-
-# Progression length
-PROGRESSION_LEN = 10
-
-# Hidden number symbol
-HIDDEN_EL = ".."
+from brain_games.games.const import PROGRESSION_LEN, HIDDEN_EL
 
 
 def get_game_text() -> str:

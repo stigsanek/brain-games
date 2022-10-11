@@ -18,3 +18,9 @@ OPERATORS = {
     "-": operator.sub,
     "*": operator.mul
 }
+
+# Progression length
+PROGRESSION_LEN = 10
+
+# Hidden number symbol
+HIDDEN_EL = ".."
