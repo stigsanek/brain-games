@@ -7,8 +7,8 @@ def get_game_text() -> str:
 
     :return: str
     """
-    return f"Answer '{ANSWER_YES}' if given number is prime. " \
-           f"Otherwise answer '{ANSWER_NO}'."
+    return f'Answer "{ANSWER_YES}" if given number is prime. ' \
+           f'Otherwise answer "{ANSWER_NO}".'
 
 
 def is_prime_number(number: int) -> bool:

@@ -7,8 +7,8 @@ def get_game_text() -> str:
 
     :return: str
     """
-    return f"Answer '{ANSWER_YES}' if the number is even, " \
-           f"otherwise answer '{ANSWER_NO}'."
+    return f'Answer "{ANSWER_YES}" if the number is even, ' \
+           f'otherwise answer "{ANSWER_NO}".'
 
 
 def get_answer(number: int) -> str:
