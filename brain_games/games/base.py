@@ -9,6 +9,12 @@ ATTEMPT_COUNT = 3
 # Range start number
 NUMS_RANGE = (1, 100)
 
+# Correct answer
+ANSWER_YES = "yes"
+
+# Wrong Answer
+ANSWER_NO = "no"
+
 
 def get_random_num() -> int:
     """

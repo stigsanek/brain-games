@@ -1,8 +1,4 @@
-# Correct answer
-ANSWER_YES = "yes"
-
-# Wrong Answer
-ANSWER_NO = "no"
+from brain_games.games.base import ANSWER_YES, ANSWER_NO
 
 
 def get_game_text() -> str:
