@@ -1,8 +1,22 @@
 """The module contains functions and constants that are used in all games"""
+import random
+
 import prompt
 
 # Number of attempts in the game
 ATTEMPT_COUNT = 3
+
+# Range start number
+NUMS_RANGE = (1, 100)
+
+
+def get_random_num() -> int:
+    """
+    Returns random number from range
+
+    :return:
+    """
+    return random.randint(NUMS_RANGE[0], NUMS_RANGE[1])
 
 
 def greet_user():

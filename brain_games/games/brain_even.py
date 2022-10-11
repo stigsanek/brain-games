@@ -1,24 +1,10 @@
-import random
-
-from brain_games.games.base import run_base_logic
-
-# Range start number
-NUMS_RANGE = (1, 100)
+from brain_games.games.base import get_random_num, run_base_logic
 
 # Correct answer
 ANSWER_YES = "yes"
 
 # Wrong Answer
 ANSWER_NO = "no"
-
-
-def get_random_num() -> int:
-    """
-    Returns random number from range
-
-    :return:
-    """
-    return random.randint(NUMS_RANGE[0], NUMS_RANGE[1])
 
 
 def get_correct_answer(number: int) -> str:
