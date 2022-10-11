@@ -3,6 +3,11 @@ from brain_games.cli import welcome_user
 
 
 def main():
+    """
+    Main function
+
+    :return:
+    """
     print("Welcome to the Brain Games!")
 
     user_name = welcome_user()
