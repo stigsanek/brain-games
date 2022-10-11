@@ -1,13 +1,9 @@
 import random
 
-from brain_games.games.const import ATTEMPT_COUNT
-from brain_games.games.func import greet_user, ask_question
+from brain_games.games.base import run_base_logic
 
 # Range start number
-RAND_INT_START = 1
-
-# Range end number
-RAND_INT_END = 100
+NUMS_RANGE = (1, 100)
 
 # Correct answer
 ANSWER_YES = "yes"
@@ -16,33 +12,36 @@ ANSWER_YES = "yes"
 ANSWER_NO = "no"
 
 
+def get_random_num() -> int:
+    """
+    Returns random number from range
+
+    :return:
+    """
+    return random.randint(NUMS_RANGE[0], NUMS_RANGE[1])
+
+
+def get_correct_answer(number: int) -> str:
+    """
+    Returns correct answer
+
+    :param number: random number
+    :return: str
+    """
+    return ANSWER_YES if number % 2 == 0 else ANSWER_NO
+
+
 def run_brain_even():
     """
     Runs game logic
 
     :return:
     """
-    user_name = greet_user()
-    print(f"Answer '{ANSWER_YES}' if the number is even, "
-          f"otherwise answer '{ANSWER_NO}'.")
+    game_text = f"Answer '{ANSWER_YES}' if the number is even, " \
+                f"otherwise answer '{ANSWER_NO}'."
 
-    i = 0
-
-    while i < ATTEMPT_COUNT:
-        number = random.randint(RAND_INT_START, RAND_INT_END)
-
-        correct_answer = ANSWER_YES if number % 2 == 0 else ANSWER_NO
-        answer = ask_question(number)
-
-        if correct_answer != answer:
-            print(f"'{answer}' is wrong answer ;(. "
-                  f"Correct answer was '{correct_answer}'.")
-            break
-
-        print("Correct!")
-        i += 1
-
-    if i == ATTEMPT_COUNT:
-        print(f"Congratulations, {user_name}!")
-    else:
-        print(f"Let's try again, {user_name}!")
+    run_base_logic(
+        game_text=game_text,
+        question_fn=get_random_num,
+        answer_fn=get_correct_answer
+    )
