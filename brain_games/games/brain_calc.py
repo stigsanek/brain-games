@@ -1,7 +1,7 @@
 import operator
 import random
 
-from brain_games.games.base import get_random_num, run_base_logic
+from brain_games.games.base import get_random_num
 
 # Math operators map
 OPERATORS = {
@@ -11,7 +11,16 @@ OPERATORS = {
 }
 
 
-def get_random_expression() -> str:
+def get_game_text() -> str:
+    """
+    Returns condition game text
+
+    :return: str
+    """
+    return "What is the result of the expression?"
+
+
+def get_random_expr() -> str:
     """Returns random expression"""
     symbols = list(OPERATORS.keys())
 
@@ -22,7 +31,7 @@ def get_random_expression() -> str:
     return f"{num_one} {symbols[idx]} {num_two}"
 
 
-def get_correct_answer(expression: str) -> str:
+def get_answer(expression: str) -> str:
     """
     Returns correct answer
 
@@ -35,18 +44,3 @@ def get_correct_answer(expression: str) -> str:
     num_two = int(data[2])
 
     return str(fn(num_one, num_two))
-
-
-def run_brain_calc():
-    """
-    Runs game logic
-
-    :return:
-    """
-    game_text = "What is the result of the expression?"
-
-    run_base_logic(
-        game_text=game_text,
-        question_fn=get_random_expression,
-        answer_fn=get_correct_answer
-    )
