@@ -13,3 +13,14 @@ def greet_user():
     print(f"Hello, {user_name}!")
 
     return user_name
+
+
+def ask_question(question) -> str:
+    """
+    Ask a question user
+
+    :param question: question for the user
+    :return: str
+    """
+    answer = prompt.string(f"Question: {question}\nYour answer: ", empty=True)
+    return str(answer)
