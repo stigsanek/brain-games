@@ -1,16 +1,7 @@
 import random
 
-from brain_games.games.base import get_random_num
+from brain_games.games.base import get_random_num, run_base_logic
 from brain_games.games.const import PROGRESSION_LEN, HIDDEN_EL
-
-
-def get_game_text() -> str:
-    """
-    Returns condition game text
-
-    :return: str
-    """
-    return "What number is missing in the progression?"
 
 
 def get_progression() -> str:
@@ -73,3 +64,16 @@ def get_answer(progression: str) -> str:
         return str(nums[idx] - step)
 
     return str(nums[idx - 1] + step)
+
+
+def run_progression():
+    """
+    Runs game logic
+
+    :return:
+    """
+    run_base_logic(
+        game_text="What number is missing in the progression?",
+        question_fn=get_progression,
+        answer_fn=get_answer
+    )

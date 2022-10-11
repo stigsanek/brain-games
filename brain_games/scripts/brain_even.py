@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.games.base import get_random_num, run_base_logic
-from brain_games.games.even import get_game_text, get_answer
+from brain_games.games.even import run_even
 
 
 def main():
@@ -9,11 +8,7 @@ def main():
 
     :return:
     """
-    run_base_logic(
-        game_text=get_game_text(),
-        question_fn=get_random_num,
-        answer_fn=get_answer
-    )
+    run_even()
 
 
 if __name__ == "__main__":

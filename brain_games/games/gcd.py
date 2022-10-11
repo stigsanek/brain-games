@@ -1,15 +1,6 @@
 import math
 
-from brain_games.games.base import get_random_num
-
-
-def get_game_text() -> str:
-    """
-    Returns condition game text
-
-    :return: str
-    """
-    return "Find the greatest common divisor of given numbers."
+from brain_games.games.base import get_random_num, run_base_logic
 
 
 def get_random_nums() -> str:
@@ -36,3 +27,16 @@ def get_answer(nums: str) -> str:
     num_two = int(data[1])
 
     return str(math.gcd(num_one, num_two))
+
+
+def run_gcd():
+    """
+    Runs game logic
+
+    :return:
+    """
+    run_base_logic(
+        game_text="Find the greatest common divisor of given numbers.",
+        question_fn=get_random_nums,
+        answer_fn=get_answer
+    )

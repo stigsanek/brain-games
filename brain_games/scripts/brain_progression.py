@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.games.base import run_base_logic
-from brain_games.games.progression import get_answer
-from brain_games.games.progression import get_game_text, get_progression
+from brain_games.games.progression import run_progression
 
 
 def main():
@@ -10,11 +8,7 @@ def main():
 
     :return:
     """
-    run_base_logic(
-        game_text=get_game_text(),
-        question_fn=get_progression,
-        answer_fn=get_answer
-    )
+    run_progression()
 
 
 if __name__ == "__main__":

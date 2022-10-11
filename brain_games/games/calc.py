@@ -1,16 +1,7 @@
 import random
 
-from brain_games.games.base import get_random_num
+from brain_games.games.base import get_random_num, run_base_logic
 from brain_games.games.const import OPERATORS
-
-
-def get_game_text() -> str:
-    """
-    Returns condition game text
-
-    :return: str
-    """
-    return "What is the result of the expression?"
 
 
 def get_random_expr() -> str:
@@ -37,3 +28,16 @@ def get_answer(expression: str) -> str:
     num_two = int(data[2])
 
     return str(fn(num_one, num_two))
+
+
+def run_calc():
+    """
+    Runs game logic
+
+    :return:
+    """
+    run_base_logic(
+        game_text="What is the result of the expression?",
+        question_fn=get_random_expr,
+        answer_fn=get_answer
+    )
