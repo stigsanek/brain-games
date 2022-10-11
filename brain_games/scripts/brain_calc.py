@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.games.base import run_base_logic
-from brain_games.games.brain_calc import get_answer
-from brain_games.games.brain_calc import get_game_text, get_random_expr
+from brain_games.games.calc import get_answer
+from brain_games.games.calc import get_game_text, get_random_expr
 
 
 def main():

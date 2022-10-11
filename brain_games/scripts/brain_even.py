@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from brain_games.games.base import get_random_num, run_base_logic
-from brain_games.games.brain_even import get_game_text, get_answer
+from brain_games.games.even import get_game_text, get_answer
 
 
 def main():

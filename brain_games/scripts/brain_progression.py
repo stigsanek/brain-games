@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.games.base import run_base_logic
-from brain_games.games.brain_progression import get_answer
-from brain_games.games.brain_progression import get_game_text, get_progression
+from brain_games.games.progression import get_answer
+from brain_games.games.progression import get_game_text, get_progression
 
 
 def main():
