@@ -3,17 +3,7 @@ import random
 
 import prompt
 
-# Number of attempts in the game
-ATTEMPT_COUNT = 3
-
-# Range start number
-NUMS_RANGE = (1, 100)
-
-# Correct answer
-ANSWER_YES = "yes"
-
-# Wrong Answer
-ANSWER_NO = "no"
+from brain_games.games.const import NUMS_RANGE, ATTEMPT_COUNT
 
 
 def get_random_num() -> int:

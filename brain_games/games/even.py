@@ -1,4 +1,4 @@
-from brain_games.games.base import ANSWER_YES, ANSWER_NO
+from brain_games.games.const import ANSWER_YES, ANSWER_NO
 
 
 def get_game_text() -> str:

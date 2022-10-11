@@ -1,14 +1,7 @@
-import operator
 import random
 
 from brain_games.games.base import get_random_num
-
-# Math operators map
-OPERATORS = {
-    "+": operator.add,
-    "-": operator.sub,
-    "*": operator.mul
-}
+from brain_games.games.const import OPERATORS
 
 
 def get_game_text() -> str:
