@@ -8,7 +8,7 @@ The project contains 5 console games:
 - `brain-calc` - calculator
 - `brain-even` - parity check
 - `brain-gcd`- greatest common divisor
-- `brain-prime` - Is it a prime number?
+- `brain-prime` - is it a prime number?
 - `brain-progression` - arithmetic progression
 
 ## Install
