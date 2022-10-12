@@ -10,12 +10,12 @@ def get_random_num() -> int:
     """
     Returns random number from range
 
-    :return:
+    :return: int
     """
     return random.randint(NUMS_RANGE[0], NUMS_RANGE[1])
 
 
-def greet_user():
+def greet_user() -> str:
     """
     Greets user and returns username
 

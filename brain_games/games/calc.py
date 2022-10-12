@@ -5,7 +5,11 @@ from brain_games.games.const import OPERATORS
 
 
 def get_random_expr() -> str:
-    """Returns random expression"""
+    """
+    Returns random expression
+
+    :return: str
+    """
     symbols = list(OPERATORS.keys())
 
     idx = random.randint(0, len(symbols) - 1)
