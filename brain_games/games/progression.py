@@ -49,6 +49,10 @@ def get_answer(progression: str) -> str:
     :return: str
     """
     data = progression.split(" ")
+
+    if len(data) < 3:
+        raise ValueError("There must be at least 2 numbers and a hidden "
+                         "symbol in the progression")
     nums = []
     idx = 0
 
@@ -77,3 +81,8 @@ def run_progression():
         question_fn=get_progression,
         answer_fn=get_answer
     )
+
+
+if __name__ == '__main__':
+    d = get_progression()
+    pass
