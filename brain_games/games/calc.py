@@ -27,6 +27,12 @@ def get_answer(expression: str) -> str:
     :return: str
     """
     data = expression.split(" ")
+
+    if len(data) != 3:
+        raise ValueError(
+            "The expression must contain two operands and one operator"
+        )
+
     fn = OPERATORS.get(data[1])
     num_one = int(data[0])
     num_two = int(data[2])
