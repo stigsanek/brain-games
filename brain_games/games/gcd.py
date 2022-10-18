@@ -23,6 +23,10 @@ def get_answer(nums: str) -> str:
     :return: str
     """
     data = nums.split(" ")
+
+    if len(data) != 2:
+        raise ValueError("Value must contain two numbers")
+
     num_one = int(data[0])
     num_two = int(data[1])
 
