@@ -1,6 +1,8 @@
-from brain_games.games.const import HIDDEN_EL, PROGRESSION_LEN
-from brain_games.games.progression import get_progression, calculate_step, get_answer
 import pytest
+
+from brain_games.games.const import HIDDEN_EL, PROGRESSION_LEN
+from brain_games.games.progression import get_answer
+from brain_games.games.progression import get_progression, calculate_step
 
 
 def test_get_progression():
