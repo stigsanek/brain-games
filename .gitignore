@@ -7,3 +7,7 @@ Thumbs.db
 .venv/
 
 dist/
+
+.pytest_cache/
+
+.coverage
