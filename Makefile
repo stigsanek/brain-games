@@ -33,3 +33,6 @@ lint:
 
 test:
 	poetry run pytest
+
+test-coverage:
+	poetry run pytest --cov=brain_games --cov-report xml

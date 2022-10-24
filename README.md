@@ -1,7 +1,9 @@
 # Brain games
 
+[![Github Actions Status](https://github.com/stigsanek/python-project-49/workflows/python-ci/badge.svg)](https://github.com/stigsanek/python-project-49/actions)
 [![Actions Status](https://github.com/stigsanek/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/stigsanek/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/fcb2587dfb95cbc6f1e7/maintainability)](https://codeclimate.com/github/stigsanek/python-project-49/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/fcb2587dfb95cbc6f1e7/test_coverage)](https://codeclimate.com/github/stigsanek/python-project-49/test_coverage)
 
 The project contains 5 console games:
 
