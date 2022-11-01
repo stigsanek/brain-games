@@ -81,8 +81,3 @@ def run_progression():
         question_fn=get_progression,
         answer_fn=get_answer
     )
-
-
-if __name__ == '__main__':
-    d = get_progression()
-    pass
