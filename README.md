@@ -5,6 +5,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fcb2587dfb95cbc6f1e7/maintainability)](https://codeclimate.com/github/stigsanek/python-project-49/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/fcb2587dfb95cbc6f1e7/test_coverage)](https://codeclimate.com/github/stigsanek/python-project-49/test_coverage)
 
+## Description
+
 "Brain games" is a set of five console games based on the popular mobile brain-pumping apps. Each game asks questions
 that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end
 the game and prompt you to play it again. Games:
@@ -17,39 +19,52 @@ the game and prompt you to play it again. Games:
 
 ## Install
 
-1. Install [poetry](https://python-poetry.org/).
-2. Run `make install` or `poetry install` in the project directory.
+### Python
+
+Before installing the package, you need to make sure that you have Python version 3.8 or higher installed.
+
+```bash
+>> python --version
+Python 3.8.0+
+```
+
+If you don't have Python installed, you can download and install it
+from [the official Python website](https://www.python.org/downloads/).
+
+### Poetry
+
+The project uses the Poetry manager. Poetry is a tool for dependency management and packaging in Python. It allows you
+to declare the libraries your project depends on and it will manage (install/update) them for you. You can read more
+about this tool on [the official Poetry website](https://python-poetry.org/)
+
+### Package
+
+To work with the package, you need to clone the repository to your computer. This is done using the `git clone` command.
+Clone the project on the command line:
+
+```bash
+# clone via HTTPS:
+>> git clone https://github.com/stigsanek/python-project-49.git
+# clone via SSH:
+>> git@github.com:stigsanek/python-project-49.git
+```
+
+It remains to move to the directory and install the package:
+
+```bash
+>> cd python-project-49
+>> poetry build
+>> python -m pip install --user dist/*.whl
+```
+
+Finally, we can move on to using the project functionality!
 
 ## Usage
 
-### From project
-
-Commands for launching games:
-
-- Calculator: `make brain-calc` or `poetry run brain-calc`
-- Progression: `make brain-progression` or `poetry run brain-progression`
-- Determining an even number: `make brain-even` or `poetry run brain-even`
-- Determining the largest common divisor: `make brain-gcd` or `poetry run brain-gcd`
-- Determining a prime number: `make brain-prime` or `poetry run brain-prime`
-
-### Wheel
-
-You can build the wheel for later installation in a separate virtual environment with command `make build`
-or `poetry build`.
-After installing the package in the virtual environment, the games can be launched using the commands:
-
-- Calculator: `brain-calc`
-- Progression: `brain-progression`
-- Determining an even number: `brain-even`
-- Determining the largest common divisor: `brain-gcd`
-- Determining a prime number: `brain-prime`
-
-## Example
-
 ### Calculator
 
-```
-brain-calc
+```bash
+>> brain-calc
 
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -69,8 +84,8 @@ Congratulations, Sam!
 
 ### Progression
 
-```
-brain-progression
+```bash
+>> brain-progression
 
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -90,8 +105,8 @@ Congratulations, Sam!
 
 ### Determining an even number
 
-```
-brain-even
+```bash
+>> brain-even
 
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -111,8 +126,8 @@ Congratulations, Sam!
 
 ### Determining the largest common divisor
 
-```
-brain-gcd
+```bash
+>> brain-gcd
 
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -132,8 +147,8 @@ Congratulations, Sam!
 
 ### Determining a prime number
 
-```
-brain-prime
+```bash
+>> brain-prime
 
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -143,3 +158,12 @@ Question: 7
 Your answer: yes
 Correct!
 ```
+
+## Development
+
+### Useful commands
+
+* `make install` - install all dependencies in the environment.
+* `make build` - build the wheel.
+* `make lint` - checking code with linter.
+* `make test` - run tests.
