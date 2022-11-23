@@ -1,9 +1,8 @@
 # Brain games
 
-[![Github Actions Status](https://github.com/stigsanek/python-project-49/workflows/python-ci/badge.svg)](https://github.com/stigsanek/python-project-49/actions)
-[![Actions Status](https://github.com/stigsanek/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/stigsanek/python-project-49/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/fcb2587dfb95cbc6f1e7/maintainability)](https://codeclimate.com/github/stigsanek/python-project-49/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/fcb2587dfb95cbc6f1e7/test_coverage)](https://codeclimate.com/github/stigsanek/python-project-49/test_coverage)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/stigsanek/brain-games/python-ci)
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/stigsanek/brain-games)
+![Code Climate coverage](https://img.shields.io/codeclimate/coverage/stigsanek/brain-games)
 
 ## Description
 
@@ -44,15 +43,15 @@ Clone the project on the command line:
 
 ```bash
 # clone via HTTPS:
->> git clone https://github.com/stigsanek/python-project-49.git
+>> git clone https://github.com/stigsanek/brain-games.git
 # clone via SSH:
->> git@github.com:stigsanek/python-project-49.git
+>> git@github.com:stigsanek/brain-games.git
 ```
 
 It remains to move to the directory and install the package:
 
 ```bash
->> cd python-project-49
+>> cd brain-games
 >> poetry build
 >> python -m pip install --user dist/*.whl
 ```
