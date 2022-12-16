@@ -1,6 +1,6 @@
 # Brain games
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/stigsanek/brain-games/python-ci)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/stigsanek/brain-games/pyci.yml?branch=main)
 ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/stigsanek/brain-games)
 ![Code Climate coverage](https://img.shields.io/codeclimate/coverage/stigsanek/brain-games)
 
